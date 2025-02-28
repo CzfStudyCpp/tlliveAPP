@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.tl</groupId>
+  <artifactId>tl-live-app</artifactId>
+  <version>1.1</version>
+  <packaging>pom</packaging>
+
+  <name>tl-live-app</name>
+  <url>http://maven.apache.org</url>
+  <modules>
+    <module>tl-live-api</module>
+    <module>tl-live-user</module>
+    <module>tl-live-redis-common</module>
+    <module>tl-live-id-generate</module>
+      <module>tl-live-common</module>
+      <module>tl-live-gateway</module>
+      <module>tl-live-im</module>
+      <module>tl-live-im/tl-live-im-interface</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <dubbo.version>3.2.9</dubbo.version>
+    <spring-cloud-bootstrap.version>3.0.2</spring-cloud-bootstrap.version>
+    <mysql.version>8.0.28</mysql.version>
+    <mybatis-plus.version>3.5.3</mybatis-plus.version>
+    <cosid.version>2.6.8</cosid.version>
+    <spring-cloud-starter-gateway.version>4.0.6</spring-cloud-starter-gateway.version>
+    <spring-cloud-starter-loadbalancer.version>4.0.3</spring-cloud-starter-loadbalancer.version>
+    <fastjson.version>2.0.42</fastjson.version>
+    <rocketmq.springboot.version>2.3.0</rocketmq.springboot.version>
+    <rocketmq.version>5.2.0</rocketmq.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>3.0.4</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+        <version>2022.0.0.0-RC2</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

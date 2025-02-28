@@ -1,0 +1,68 @@
+# 编译输出
+/dist
+/out
+/build
+/node_modules
+/.parcel-cache
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# IDE 相关文件
+/.idea/
+/.vscode/
+/*.suo
+/*.ntvs
+/*.njsproj
+/*.sln
+/*.sw?
+
+# 环境配置文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+# 编译输出
+/dist
+/out
+/build
+/node_modules
+/.parcel-cache
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# IDE 相关文件
+/.idea/
+/.vscode/
+/*.suo
+/*.ntvs
+/*.njsproj
+/*.sln
+/*.sw?
+
+# 环境配置文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+idea/
+target/

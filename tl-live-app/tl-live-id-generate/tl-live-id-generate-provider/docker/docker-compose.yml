@@ -1,0 +1,26 @@
+#version: '3'
+services:
+  tl-live-id-generate-1:
+    container_name: tl-live-id-generate-1
+    image: 'registry.cn-hangzhou.aliyuncs.com/tearwind/tl-live-id-generate:1.1'
+    ports:
+      - "8084:8084"
+    volumes:
+      - /tmp/logs/tl-live-id-generate-provider:/tmp/logs/tl-live-id-generate-provider
+    environment:
+      - server.port=8081
+      - JAVA_OPTS=-XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m -Xms512m -Xmx512m -Xmn128m -Xss256k
+    extra_hosts:
+      - 'nacos.tllive.com:192.168.233.132'
+  tl-live-id-generate-2:
+    container_name: tl-live-id-generate-2
+    image: 'registry.cn-hangzhou.aliyuncs.com/tearwind/tl-live-id-generate:1.1'
+    ports:
+      - "8094:8094"
+    volumes:
+      - /tmp/logs/tl-live-id-generate-provider:/tmp/logs/tl-live-id-generate-provider
+    environment:
+      - server.port=8094
+      - JAVA_OPTS=-XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m -Xms512m -Xmx512m -Xmn128m -Xss256k
+    extra_hosts:
+      - 'nacos.tllive.com:192.168.233.132'

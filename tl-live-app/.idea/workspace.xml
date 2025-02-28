@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cdb96703-971f-448a-9670-9a6a5b826232" name="Changes" comment="3-3 完成IM服务集群化处理。">
+      <change afterPath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-im-busi-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-im-server-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/docker/tl-live-id-generate-provider-1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-api-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-api-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-common-db.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-common-db.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-gateway-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-gateway-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-id-provider-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-id-provider-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-user-provider-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP/tl-live-user-provider-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-api/src/main/java/com/tl/live/controller/IMController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-api/src/main/java/com/tl/live/controller/IMController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-api/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-api/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-gateway/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-gateway/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-im/tl-live-im-busi/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-im/tl-live-im-busi/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-im/tl-live-im-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-im/tl-live-im-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-im/tl-live-im-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-im/tl-live-im-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-user/tl-live-user-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-user/tl-live-user-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-user/tl-live-user-provider/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-user/tl-live-user-provider/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tl-live-user/tl-live-user-provider/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tl-live-user/tl-live-user-provider/src/main/resources/logback-spring.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2eXWFio60fbAQxJVkb6gKuSFEs0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/roykingw/DevCode/tl-live/tl-live-app/nacos-config&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;09482dfb747e7cf551ae8b99b5ac8b10&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nacos-config" />
+      <recent name="$PROJECT_DIR$/tl-live-id-generate/tl-live-id-generate-provider/docker" />
+      <recent name="$PROJECT_DIR$/tl-live-im/tl-live-im-interface/src/main/java/com/tl/im/protocol" />
+      <recent name="$PROJECT_DIR$/tl-live-im/tl-live-im-busi/src/main/resources" />
+      <recent name="$PROJECT_DIR$/tl-live-im/tl-live-im-server/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nacos-config/DEFAULT_GROUP" />
+      <recent name="$PROJECT_DIR$/tl-live-im/tl-live-im-server/src/test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tl.im.config" />
+      <recent name="com.tl.im.server.manager" />
+      <recent name="com.tl.im.server.config" />
+      <recent name="com.tl.live.util" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.IMServerApplication (1)">
+    <configuration name="RocketMQTest.sendMQTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tl-live-im-busi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tl.im.busi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tl.im.busi" />
+      <option name="MAIN_CLASS_NAME" value="com.tl.im.busi.RocketMQTest" />
+      <option name="METHOD_NAME" value="sendMQTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RocketMQTest.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tl-live-im-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tl.im.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tl.im.server" />
+      <option name="MAIN_CLASS_NAME" value="com.tl.im.server.RocketMQTest" />
+      <option name="METHOD_NAME" value="sendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tl-live-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tl.live.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IMBusiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="tl-live-im-busi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tl.im.busi.IMBusiApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8093" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tl.im.busi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IMBusiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tl-live-im-busi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tl.im.busi.IMBusiApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tl.im.busi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IMServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="tl-live-im-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tl.im.server.IMServerApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8095" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tl.im.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IMServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tl-live-im-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tl.im.server.IMServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tl.im.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdGenerateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tl-live-id-generate-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tl.id.generate.IdGenerateApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tl.id.generate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LiveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tl-live-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tl.live.LiveApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tl-live-user-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tl.user.provider.UserProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.RocketMQTest.sendMessage" />
+      <item itemvalue="JUnit.RocketMQTest.sendMQTest" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.LiveApplication" />
+      <item itemvalue="Spring Boot.UserProviderApplication" />
+      <item itemvalue="Spring Boot.IMServerApplication (1)" />
+      <item itemvalue="Spring Boot.IMBusiApplication (1)" />
+      <item itemvalue="Spring Boot.IdGenerateApplication" />
+      <item itemvalue="Spring Boot.IMBusiApplication" />
+      <item itemvalue="Spring Boot.IMServerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.IMServerApplication" />
+        <item itemvalue="Spring Boot.IMBusiApplication" />
+        <item itemvalue="Spring Boot.IdGenerateApplication" />
+        <item itemvalue="JUnit.RocketMQTest.sendMQTest" />
+        <item itemvalue="JUnit.RocketMQTest.sendMessage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb96703-971f-448a-9670-9a6a5b826232" name="Changes" comment="" />
+      <created>1712051302971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712051302971</updated>
+      <workItem from="1712051304038" duration="606000" />
+      <workItem from="1712560195315" duration="2801000" />
+      <workItem from="1712563104836" duration="4346000" />
+      <workItem from="1712630403509" duration="10489000" />
+      <workItem from="1712655797022" duration="2355000" />
+      <workItem from="1712658430869" duration="460000" />
+      <workItem from="1712711841545" duration="15854000" />
+      <workItem from="1712898010170" duration="17680000" />
+      <workItem from="1713071304467" duration="22927000" />
+      <workItem from="1713148111521" duration="16075000" />
+      <workItem from="1713233715054" duration="12374000" />
+      <workItem from="1713345162352" duration="1495000" />
+      <workItem from="1713407306502" duration="2020000" />
+      <workItem from="1713764112856" duration="542000" />
+      <workItem from="1713766329311" duration="1829000" />
+      <workItem from="1713772074082" duration="377000" />
+      <workItem from="1713833548889" duration="11871000" />
+      <workItem from="1713938236336" duration="20241000" />
+      <workItem from="1714023438216" duration="7937000" />
+      <workItem from="1714112279855" duration="5295000" />
+      <workItem from="1714957782880" duration="1196000" />
+      <workItem from="1715083440534" duration="4468000" />
+      <workItem from="1715131856647" duration="23671000" />
+      <workItem from="1715216999715" duration="6914000" />
+      <workItem from="1715316009839" duration="3441000" />
+      <workItem from="1715322135136" duration="4559000" />
+      <workItem from="1715408328736" duration="8562000" />
+      <workItem from="1715478298053" duration="10446000" />
+      <workItem from="1715562772395" duration="8630000" />
+      <workItem from="1715662803056" duration="23456000" />
+      <workItem from="1715735360205" duration="13211000" />
+      <workItem from="1715826701215" duration="5925000" />
+      <workItem from="1715943898536" duration="9453000" />
+      <workItem from="1716082246353" duration="17267000" />
+      <workItem from="1716171233048" duration="6702000" />
+      <workItem from="1716270219143" duration="5776000" />
+      <workItem from="1716281290349" duration="3996000" />
+      <workItem from="1716345576006" duration="713000" />
+      <workItem from="1716441405350" duration="3889000" />
+      <workItem from="1716559353262" duration="31000" />
+      <workItem from="1716702995825" duration="3562000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1712641288712</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712641288712</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1712641331083</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712641331083</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2-2 用户模块后端服务流程">
+      <option name="closed" value="true" />
+      <created>1712738959662</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712738959662</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2-3 用户模块后端业务完善。 用户登录+注册，头部查询用户信息，统一ID分配">
+      <option name="closed" value="true" />
+      <created>1713161204823</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713161204823</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2-3 用户模块后端业务完善。 用户登录+注册，头部查询用户信息，统一ID分配">
+      <option name="closed" value="true" />
+      <created>1713163464446</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713163464446</updated>
+    </task>
+    <task id="LOCAL-00006" summary="3-1 完成基础IM后端功能">
+      <option name="closed" value="true" />
+      <created>1715583889924</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715583889924</updated>
+    </task>
+    <task id="LOCAL-00007" summary="3-2 完成IM后端与微服务整合功能">
+      <option name="closed" value="true" />
+      <created>1715944003803</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715944003803</updated>
+    </task>
+    <task id="LOCAL-00008" summary="3-3 完成IM服务集群化处理。">
+      <option name="closed" value="true" />
+      <created>1716105576882</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716105576882</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="2-2 用户模块后端服务流程" />
+    <MESSAGE value="2-3 用户模块后端业务完善。 用户登录+注册，头部查询用户信息，统一ID分配" />
+    <MESSAGE value="3-1 完成基础IM后端功能" />
+    <MESSAGE value="3-2 完成IM后端与微服务整合功能" />
+    <MESSAGE value="3-3 完成IM服务集群化处理。" />
+    <option name="LAST_COMMIT_MESSAGE" value="3-3 完成IM服务集群化处理。" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
