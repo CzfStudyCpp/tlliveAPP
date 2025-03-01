@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class UserController {
 
-    //引用Dubbo服务
+    //引用Dubbo服务,指定消费者
     @DubboReference(check = false)
     private IUserRPCService userRPCService;
 
